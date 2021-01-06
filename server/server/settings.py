@@ -25,7 +25,7 @@ SECRET_KEY = '$^%*z7h88kyqa%ls@7ov08f&wrl)v#40eex8gum(u52a-2unvw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 CORS_ORIGIN_ALLOW_ALL = True
 
 
@@ -80,13 +80,29 @@ WSGI_APPLICATION = 'server.wsgi.application'
 
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'student_detail',
+    #     'USER': 'saifu',
+    #     'PASSWORD': 'saifu123',
+    #     'OPTIONS': {
+    #         'read_default_file': '/etc/mysql/my.cnf',
+    #     },
+    # }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'NAME': '3eLWHXGQ2B',
+        'HOST': 'remotemysql.com',
+        'PORT': '3306',
+        'USER': '3eLWHXGQ2B',
+        'PASSWORD': 'dJzeytN7Qe',
         'OPTIONS': {
             'read_default_file': '/etc/mysql/my.cnf',
         },
     }
 }
+
+# dJzeytN7Qe
 
 
 # Password validation
